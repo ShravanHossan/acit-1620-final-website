@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/Social%20Media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        function myfunction() {
+            alert("Thank you for submitting");
+            $('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus')
+            })
+        }
+
+    </script>
+
+
+</head>
+<body class="bg-info">
+<nav class="navbar navbar-light bg-secondary">
+    <p class="navbar-brand d-none d-lg-block" href="#" style="font-size: 30px">
+        <img src="Images/GECDO%20Logo_scaled.png" width="50" height="50" class="d-inline-block align-top" alt=""> Genetic Engineered Kemonomimi For Domestic Ownership
+    </p>
+    <p class="navbar-brand d-lg-none" href="#" style="font-size: 30px">
+        <img src="Images/GECDO%20Logo_scaled.png" width="50" height="50" class="d-inline-block align-top" alt=""> GEKFDO
+    </p>
+
+</nav>
+<div class="container-fluid" style="margin-top: 15px; margin-bottom: 15px">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="font-size: 25px">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="Content%20Page%201.html">Ookamimi</a>
+                <a class="nav-item nav-link" href="Content%20Page%202.html">Nekomimi</a>
+                <a class="nav-item nav-link active" href="Contact%20Page.html">Contact Page <span class="sr-only">(current)</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <form class="need-validation" onsubmit="myfunction()">
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="First_name">First Name</label>
+                <input id="First_name" class="form-control" required>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="Last_name">Last Name</label>
+                <input type="text" class="form-control" required id="Last_name">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" required placeholder="Email">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="inputCountry">Country</label>
+                <input type="text" class="form-control" id="inputCountry" required placeholder="Country">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="comments">Comments</label>
+                <textarea type=text class="form-control" id="comments" required placeholder="Enter a comment"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Animal Ear Engineering</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Thank You for your input.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">I consent to pre-authorized funds transfer. </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mapouter gmap_canvas">
+        <div class="row jumbotron">
+            <div class="col-md-6">
+                <p>Address:1 Chome-1-83 Shimorenjaku,
+                    Mitaka, Tokyo 181-0013, Japan </p>
+                <p>Phone number: +81 570-055-777</p>
+                <p>E-mail: Contact@StudioGhibli.jp</p>
+            </div>
+            <div class="col-md-6">
+                <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=japan%20tokyo&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<footer class="footer">
+    <div class="text-muted footer-copyright text-center" style="background: #3f51b5; font-size: 25px" >
+        ©Copyright and All Right Reserved
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+    </div>
+</footer>
+</body>
+</html>
